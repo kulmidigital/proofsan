@@ -71,7 +71,7 @@ export function ServicesSection() {
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent'></div>
               </div>
-              <div className='p-6'>
+              <div className='p-2 -mt-4'>
                 <CardTitle className='text-xl text-[#053d62] mb-3'>
                   {category.title}
                 </CardTitle>
