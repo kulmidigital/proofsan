@@ -71,8 +71,8 @@ export function BenefitsSection() {
       </div>
 
       <div className='container mx-auto px-4 relative'>
-        <div className='text-center mb-16 lg:mb-20'>
-          <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight'>
+        <div className='text-left md:text-center mb-16 lg:mb-20'>
+          <h2 className='text-xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight'>
             Why Proofsan Waterproofing Systems are Essential
           </h2>
           <p className='text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed'>

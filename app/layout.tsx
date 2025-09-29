@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { BsWhatsapp } from "react-icons/bs";
 import "./globals.css";
 
@@ -10,13 +11,12 @@ const montserrat = Montserrat({
 });
 
 const siteConfig = {
-  name: "Proofsan",
+  name: "Proofsan Waterproofing Products",
   url: "https://proofsan.so",
-  ogImage: "https://proofsan.so/og-image.png",
+  ogImage: "https://proofsan.so/logo.png",
   description:
     "Complete range of high-performance waterproofing systems engineered to deliver lasting protection in demanding environments. From residential to industrial applications.",
   links: {
-    twitter: "https://twitter.com/proofsan",
     facebook: "https://web.facebook.com/ProofSan?_rdc=1&_rdr",
   },
   keywords: [
@@ -35,6 +35,15 @@ const siteConfig = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: siteConfig.url,
+    languages: {
+      "x-default": siteConfig.url,
+      en: siteConfig.url,
+      "en-US": siteConfig.url,
+      "en-GB": siteConfig.url,
+    },
+  },
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -64,13 +73,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
-    creator: "@proofsan",
-  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -99,42 +101,39 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Proofsan",
-    url: "https://proofsan.so",
-    logo: "https://proofsan.so/logo.png",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: siteConfig.ogImage,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+254-719-543-569",
       contactType: "Customer Service",
     },
-    sameAs: [
-      "https://web.facebook.com/ProofSan?_rdc=1&_rdr",
-      "https://twitter.com/proofsan",
-    ],
+    sameAs: [siteConfig.links.facebook],
   };
 
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={`${montserrat.className} antialiased`}>
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Navbar />
         {children}
+        <Footer />
 
-        {/* Floating WhatsApp Button */}
+        {/* WhatsApp Button */}
         <a
-          href="https://wa.me/254719543569"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
-          aria-label="Contact us on WhatsApp"
-        >
-          <BsWhatsapp className="w-7 h-7 text-white" />
-          <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+          href='https://wa.me/254719543569'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group'
+          aria-label='Contact us on WhatsApp'>
+          <BsWhatsapp className='w-7 h-7 text-white' />
+          <div className='absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap'>
             Chat on WhatsApp
-            <div className="absolute left-full top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-800 border-y-2 border-y-transparent"></div>
+            <div className='absolute left-full top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-800 border-y-2 border-y-transparent'></div>
           </div>
         </a>
       </body>

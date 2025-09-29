@@ -3,7 +3,6 @@ import { BenefitsWorkingWithUs } from "@/components/home/benefits-working-with-u
 import { HeroSection } from "@/components/home/hero-section";
 import { ProductsSection } from "@/components/home/products-section";
 import { ServicesSection } from "@/components/home/services-section";
-import { Footer } from "@/components/layout/footer";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function Home() {
       <ProductsSection />
       <ServicesSection />
       <BenefitsSection />
-      <Footer />
     </div>
   );
 }

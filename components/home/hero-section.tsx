@@ -23,9 +23,8 @@ export function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight text-white">
                 Proofsan
               </h1>
-              <div className="text-xl md:text-2xl lg:text-3xl font-light text-white/90 leading-tight">
-                Products & Waterproofing
-                <span className="md:block font-medium text-white">Services</span>
+              <div className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-tight">
+                Products & Waterproofing Services
               </div>
             </div>
 
