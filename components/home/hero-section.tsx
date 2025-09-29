@@ -29,7 +29,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-lg md:text-xl mb-8 leading-relaxed text-white/90 font-light max-w-xl">
-              Premium waterproofing products and professional installation services delivering
+              Premium waterproofing products and professional installation services, delivering
               complete solutions for lasting protection in all environments.
             </p>
 
