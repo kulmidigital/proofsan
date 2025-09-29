@@ -50,7 +50,7 @@ export function BenefitsWorkingWithUs() {
       <div className='container mx-auto px-4 relative'>
         <div className='text-center mb-4 md:mb-12'>
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#053d62] leading-tight'>
-            Why Choose Proofsan?
+            Why Choose Us?
           </h2>
         </div>
 
