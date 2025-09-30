@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://proofsan.so/sitemap.xml',
+    sitemap: 'https://proofsan.com/sitemap.xml',
   }
 }

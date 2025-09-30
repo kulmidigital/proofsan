@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 
 const siteConfig = {
   name: "Proofsan Waterproofing Products",
-  url: "https://proofsan.so",
-  ogImage: "https://proofsan.so/logo.png",
+  url: "https://proofsan.com",
+  ogImage: "https://proofsan.com/logo.png",
   description:
     "Complete range of high-performance waterproofing systems engineered to deliver lasting protection in demanding environments. From residential to industrial applications.",
   links: {

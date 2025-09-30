@@ -34,7 +34,7 @@ export function HeroSection() {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <a href="mailto:info@proofsan.so">
+              <a href="mailto:info@proofsan.com">
                 <Button
                   size="lg"
                   className="bg-white text-[#053d62] hover:bg-white/90 hover:scale-105 text-lg px-10 py-4 rounded-full shadow-lg transition-all duration-300"
