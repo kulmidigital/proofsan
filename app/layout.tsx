@@ -17,7 +17,7 @@ const siteConfig = {
   description:
     "Complete range of high-performance waterproofing systems engineered to deliver lasting protection in demanding environments. From residential to industrial applications.",
   links: {
-    facebook: "https://web.facebook.com/ProofSan?_rdc=1&_rdr",
+    facebook: "https://www.facebook.com/share/1GbwHA47pL/?mibextid=wwXIfr",
   },
   keywords: [
     "Waterproofing",
@@ -125,7 +125,7 @@ export default function RootLayout({
 
         {/* WhatsApp Button */}
         <a
-          href='https://wa.me/254719543569'
+          href='https://wa.me/252615401468'
           target='_blank'
           rel='noopener noreferrer'
           className='fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group'
@@ -140,4 +140,3 @@ export default function RootLayout({
     </html>
   );
 }
-
