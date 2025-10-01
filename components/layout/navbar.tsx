@@ -25,7 +25,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all py-1 duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-sm border-b shadow-sm"
           : "bg-transparent"
@@ -37,9 +37,9 @@ export function Navbar() {
             <Image
               src='/logo.png'
               alt='Proofsan Logo'
-              width={120}
-              height={40}
-              className={`h-10 w-auto transition-all duration-300 ${
+              width={180}
+              height={60}
+              className={`h-[3.75rem] w-auto transition-all duration-300 ${
                 isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
             />
@@ -89,7 +89,7 @@ export function Navbar() {
                   ? "bg-[#053d62] hover:bg-[#053d62]/90 text-white"
                   : "bg-white hover:bg-gray-100 text-[#053d62]"
               }`}>
-              <a href='mailto:info@proofsan.com'>Get Quote</a>
+              <a href='mailto:info@proofsan.so'>Get Quote</a>
             </Button>
           </div>
 
