@@ -270,12 +270,9 @@ export function ProductsSection() {
                       <h4 className='font-semibold text-[#053d62] mb-3 text-sm uppercase tracking-wide'>
                         Applications
                       </h4>
-                      <ul className='text-gray-600 space-y-1'>
+                      <ul className='list-disc list-outside pl-4 text-gray-600 space-y-1 marker:text-[#053d62]'>
                         {product.applications.map((app, idx) => (
-                          <li key={idx} className='flex items-center'>
-                            <div className='w-1.5 h-1.5 bg-[#053d62] rounded-full mr-2'></div>
-                            {app}
-                          </li>
+                          <li key={idx}>{app}</li>
                         ))}
                       </ul>
                     </div>
@@ -285,12 +282,9 @@ export function ProductsSection() {
                       <h4 className='font-semibold text-[#053d62] mb-3 text-sm uppercase tracking-wide'>
                         Key Features
                       </h4>
-                      <ul className='text-gray-600 space-y-1'>
+                      <ul className='list-disc list-outside pl-4 text-gray-600 space-y-1 marker:text-[#053d62]'>
                         {product.features.map((feature, idx) => (
-                          <li key={idx} className='flex items-center'>
-                            <div className='w-1.5 h-1.5 bg-[#053d62] rounded-full mr-2'></div>
-                            {feature}
-                          </li>
+                          <li key={idx}>{feature}</li>
                         ))}
                       </ul>
                     </div>
