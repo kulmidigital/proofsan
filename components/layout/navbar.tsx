@@ -89,7 +89,7 @@ export function Navbar() {
                   ? "bg-[#053d62] hover:bg-[#053d62]/90 text-white"
                   : "bg-white hover:bg-gray-100 text-[#053d62]"
               }`}>
-              <a href='mailto:info@proofsan.so'>Get Quote</a>
+              <a href='mailto:info@proofsan.com'>Get Quote</a>
             </Button>
           </div>
 

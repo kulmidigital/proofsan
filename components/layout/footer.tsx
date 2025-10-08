@@ -196,7 +196,7 @@ export function Footer() {
               </div>
               <div className='flex items-start space-x-3'>
                 <AiOutlineMail className='w-4 h-4 text-white flex-shrink-0 mt-1' />
-                <span>info@proofsan.so</span>
+                <span>info@proofsan.com</span>
               </div>
             </div>
           </div>
